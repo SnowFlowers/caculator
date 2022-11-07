@@ -1,0 +1,56 @@
+{
+  "name": "book-manager-pc",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "feed-scripts start",
+    "dev": "feed-scripts start",
+    "build": "feed-scripts build",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.{json,css,md,scss}": [
+      "prettier --print-width 120 --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@feed/hooks": "^1.0.12",
+    "@wtdc/feed": "^2.4.1",
+    "@wtdc/feed-router": "^1.2.1",
+    "ahooks": "^3.0.0-alpha.18",
+    "antd": "^4.20.5",
+    "axios": "^0.18.0",
+    "babylonjs": "^5.28.0",
+    "classnames": "^2.2.6",
+    "file-saver": "^2.0.2",
+    "md5": "^2.2.1",
+    "qrcode.react": "^3.0.2",
+    "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "16.8.6",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-loadable": "^5.5.0",
+    "react-spring": "^9.1.1",
+    "seamless-immutable": "^7.1.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "@wtdc/feed-scripts": "4.2.1",
+    "eslint": "5.15.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "7.12.4",
+    "husky": "1.3.1",
+    "invariant": "^2.2.4",
+    "lint-staged": "8.1.5",
+    "prettier": "^1.16.4"
+  }
+}
